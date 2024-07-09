@@ -1,0 +1,71 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Container wrapper -->
+    <div class="container">
+      
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarButtonsExample"
+        aria-controls="navbarButtonsExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarButtonsExample">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <h3 class="mb-0 mt-0">Profile</h3>
+          </li>
+        </ul>
+        <!-- Left links -->
+  
+        <div class="d-flex align-items-center">
+          <button type="button" class="btn btn-primary me-3" (click)="toMember()">
+            Logout
+          </button>
+        </div>
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+
+<div class="container mt-5 d-flex justify-content-center">
+    <div class="card p-3">
+        <div class="d-flex align-items-center">
+            <div class="image"> <img src="" class="rounded" width="155"> </div>
+            <div class="ml-3 w-100">
+                <span class="articles">Username</span>
+                <h4 class="mb-0 mt-0">{{user?.user}}</h4> 
+                <br />
+                <span class="articles">Nickname</span>
+                <br /> 
+                <span>{{user?.nickname}}</span>
+                <br /> 
+                <br /> 
+                <div class="p-2 mt-2 bg-primary d-flex justify-content-between rounded text-white stats">
+                    <div class="d-flex flex-column"> 
+                        <span class="articles">Email</span> 
+                        <span class="number1">{{user?.email}}</span> 
+                    </div>
+
+                </div>
+                <br /> 
+                <br /> 
+                <br /> 
+                <br /> 
+                <div class="button mt-2 d-flex flex-row align-items-center">
+                     <button (click)="toEdit()" class="btn btn-sm btn-primary w-100 ml-2" >Edit</button>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>

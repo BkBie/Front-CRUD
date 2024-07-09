@@ -1,0 +1,41 @@
+<!-- Edit Modal -->    
+          <div class="container register-form">
+            <div class="form">
+                <div class="note">
+                    <p>Edit Member</p>
+                </div>
+
+                <div class="form-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form (ngSubmit) = "onSubmit()">
+                                <div class="form-group">
+                                    <label> First Name</label>
+                                    <br /> <br /> 
+                                    <input type="text" class ="form-control" id = "firstName"
+                                        [(ngModel)] = "editMember.firstname" name = "firstname">
+                                </div>
+                                <br /> 
+                                <div class="form-group">
+                                    <label> Last Name</label>
+                                    <br /> <br /> 
+                                    <input type="text" class ="form-control" id = "lastName"
+                                        [(ngModel)] = "editMember.lastname" name = "lastname">
+                                </div>
+                                <br /> 
+                                <div class="form-group">
+                                    <label> Email Address </label>
+                                    <br /> <br /> 
+                                    <input type="text" class ="form-control" id = "email"
+                                        [(ngModel)] = "editMember.email" name = "email">
+                                </div>
+                                <br /> 
+  
+                                <br /> 
+                                <button class = "button" type ="submit">Submit</button>
+                             </form>
+                        </div>
+                    </div>            
+                </div>
+            </div>
+        </div>

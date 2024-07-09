@@ -1,0 +1,39 @@
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<div class="container register">
+    <div class="row">
+        <div class="col-md-3 register-left">
+            <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+            <h3>Welcome</h3>
+            
+            <a href="/login" type="submit" class="link-warning">Login</a>
+            <br/>
+        </div>
+        <div class="col-md-9 register-right">
+           
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <h3 class="register-heading">Apply as a Employee</h3>
+                    <div class="row register-form">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <form #addForm="ngForm" (ngSubmit)="onRegister(addForm)">
+                                    <input type="text"  class="fadeIn second" name="user" placeholder="Username" ngModel name="user">
+                                    <br />   <br /> 
+                                    <input type="password"  class="pass_swap"  name="pass" placeholder="password" ngModel name="pass">
+                                    <br />   <br /> 
+                                    <input type="text"  class="fadeIn second" name="user" placeholder="Nickname" ngModel name="nickname">
+                                    <br />   <br /> 
+                                    <input type="text"  class="fadeIn third" name="pass" placeholder="Email Address" ngModel name="email">
+                                    <br /> 
+                                    <br /> 
+                                    <input type="submit" class="btnRegister"  value="Register"/>
+                                  </form>
+                            </div>     
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

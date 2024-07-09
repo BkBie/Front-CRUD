@@ -1,0 +1,40 @@
+<div class="container register-form">
+    <div class="form">
+        <div class="note">
+            <p>Edit Profile</p>
+        </div>
+
+        <div class="form-content">
+            <div class="row">
+                <div class="col-md-6">
+                    <form (ngSubmit) = "onSubmit()">
+                        <div class="form-group">
+                            <label> Username</label>
+                            <br /> <br /> 
+                            <input type="text" class ="form-control" id = "username"
+                                [(ngModel)] = "user.user" name = "user">
+                        </div>
+                        <br /> 
+                        <div class="form-group">
+                            <label>Nickname</label>
+                            <br /> <br /> 
+                            <input type="text" class ="form-control" id = "nickname"
+                                [(ngModel)] = "user.nickname" name = "nickname">
+                        </div>
+                        <br /> 
+                        <div class="form-group">
+                            <label> Email Address </label>
+                            <br /> <br /> 
+                            <input type="text" class ="form-control" id = "email"
+                                [(ngModel)] = "user.email" name = "email">
+                        </div>
+                        <br /> 
+
+                        <br /> 
+                        <button class = "button" type ="submit">Submit</button>
+                     </form>
+                </div>
+            </div>            
+        </div>
+    </div>
+</div>
